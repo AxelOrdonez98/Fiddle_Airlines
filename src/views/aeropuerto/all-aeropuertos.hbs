@@ -1,0 +1,37 @@
+<div class="jumbotron mt-4">
+    <h1 class="display-4">Aeropuertos</h1>
+    <hr class="my-1">
+</div>
+<div class="row">
+    {{#each verAeropuertos}}
+    <div class="col-md-5 m-2">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title d-flex justify-content-between align-items-center">
+                    {{Nombre}}<a href="/aeropuertos/editar/{{_id}}"><i class="fa fa-pencil-square-o"></i></a>
+                </h4>
+                -Ciudad del aeropuerto: {{Ciudad}} <br>
+                -Direccion del aeropuertos: {{Direccion_Aeropuerto}} <br>
+                -Telefono de la administracion del aeropuerto: {{Telefono}} <br>
+                -Id de aeropuertos: {{Id_Mundial}} <br>
+                -Numero de aeropuertos en la ciudad: {{Numero_de_Aeropuerto}} <br>
+                -Capacidad maxima de viajeros: {{Capacidad_Maxima_de_Viajes}} <br>
+                -Numero de permiso establecida por el estado/ciudad: {{Numero_de_Permiso_de_Ciudad}} <br>
+                -Cantidad de aerolines establecidad: {{Numero_de_Aerolinias_Establecidas}} <br>
+                -Tamaño de la pista de aterrizaje/despegue: {{Tamano_Pista_Km_Cuadrados}} <br>
+                -Numero de torres de control en la pista: {{Numero_de_Torres_de_Control}} <br>
+                -Numero de almacenes para aviones: {{Numero_de_Porta_Aviones}} <br>
+                -Tipo de pavimento en la pista: {{Tipo_de_Pavimento}} <br>
+                -Señalizaciones completa en la pista: {{Senalizaciones_Completas}} <br>
+                -Iluminacion completa necesaria en la pista: {{Iluminacion_Completa}} <br>
+                -Hora de registro: {{createdAt}} <br>
+                -Ultima actualizacion: {{updatedAt}} <br><br>
+                <form action="/aeropuertos/delete/{{_id}}?_method=DELETE" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit" class="btn btn-danger btn-block btn-sm">Eliminar a: {{Nombre}}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>

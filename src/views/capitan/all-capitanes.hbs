@@ -1,0 +1,44 @@
+<div class="jumbotron mt-4">
+    <h1 class="display-4">Capitanes</h1>
+    <hr class="my-1">
+</div>
+<div class="row">
+    {{#each verCapitanes}}
+    <div class="col-md-5 m-2">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title d-flex justify-content-between align-items-center">
+                    {{Nombre}}<a href="/capitanes/editar/{{_id}}"><i class="fa fa-pencil-square-o"></i></a>
+                </h4>
+                <h4 class="card-title d-flex justify-content-between align-items-center">
+                    {{Apellidos}}
+                </h4>
+                -Sexo: {{Sexo}} <br>
+                -Tipo de sangre: {{Tipo_de_Sangre}} <br>
+                -Ultima vacuna: {{Vacunas}} <br>
+                -Donante de organos: {{Donante_de_Organos}} <br>
+                -Creencia religiosa: {{Religion}} <br>
+                -Nacionalidad: {{Nacionalidad}} <br>
+                -Estado civil: {{Estado_Civil}} <br>
+                -Estudios: {{Tipo_De_Aprendizaje_Vuelo}} <br>
+                -Numero de cedula profecional: {{Numero_De_Cedula_Profecional}} <br>
+                -Pais: {{Pais}} <br>
+                -Ciudad: {{Ciudad}} <br>
+                -Calle de domicilio: {{Calle}} <br>
+                -Numero de domicilio:{{Numero_de_Domicilio}} <br>
+                -C.P: {{Codigo_Postal}} <br>
+                -Referencia de calle (1): {{Referencia_Calle_1}} <br>
+                -Referencia de calle (2): {{Referencia_Calle_2}} <br>
+                -Domicilio: {{Casa_Propia_Renta}} <br>
+                -Hora de registro: {{createdAt}} <br>
+                -Ultima actualizacion: {{updatedAt}} <br><br>
+                <form action="/capitanes/delete/{{_id}}?_method=DELETE" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit" class="btn btn-danger btn-block btn-sm">Eliminar a: {{Nombre}}
+                        {{Apellidos}}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>

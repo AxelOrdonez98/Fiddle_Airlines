@@ -1,0 +1,184 @@
+<div class="jumbotron mt-4 center">
+    <div class="card text-center">
+        <div class="card-header">
+            <h3>Nuevo Pasajero</h3>
+        </div>
+        <div class="card-body">
+            <form action="/pasajeros/nuevo-pasajero" method="POST">
+                <h3>Datos Personales</h3>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Nombre(s)</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu(s) nombre(s)" name="Nombre"
+                        autofocus>
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Apellidos</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tus Apellidos" name="Apellidos">
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label pull-left" for="inputDefault">Sexo</label>
+                    <select class="custom-select" name="Sexo">
+                        <option selected="">Seleciona una opcion:</option>
+                        <option value="Mujer">Mujer</option>
+                        <option value="Hombre">Hombre</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Tipo de sangre</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu tipo de sangre"
+                        name="Tipo_de_Sangre">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Vacunas</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu ultima vacuna" name="Vacunas">
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label pull-left" for="inputDefault">Donate de organos</label>
+                    <select class="custom-select" name="Donante_de_Organos">
+                        <option selected="">Seleciona una opcion:</option>
+                        <option value="Si">Si</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Religion</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu religon" name="Religion">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Nacionalidad</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu nacionalidad" name="Nacionalidad">
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label pull-left" for="inputDefault">Estado civil actual</label>
+                    <select class="custom-select" name="Estado_Civil">
+                        <option selected="">Seleciona una opcion:</option>
+                        <option value="Solter@">Solter@</option>
+                        <option value="Casad@">Casad@</option>
+                        <option value="Divorciad">Divorciad@</option>
+                        <option value="Viud@">Viud@</option>
+                    </select>
+                </div>
+
+                <h3>Direccion fiscal</h3>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Pais</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu pais de recidencia" name="Pais">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Ciudad</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu ciudad de recidencia" name="Ciudad">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Calle</label>
+                    <input type="text" class="form-control" placeholder="Ingresa la calle de tu domicilio" name="Calle">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Numero de domicilio</label>
+                    <input type="text" class="form-control" placeholder="Ingresa el numero exterio de tu domicilio" name="Numero_de_Domicilio">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Codigo Postal</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu codigo postal" name="Codigo_Postal">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Colonia</label>
+                    <input type="text" class="form-control" placeholder="Ingresa tu colonia" name="Colinia">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Referencia de calle 1</label>
+                    <input type="text" class="form-control" placeholder="Ingresa la primera referencia" name="Referencia_Calle_1">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Referencia de calle 2</label>
+                    <input type="text" class="form-control" placeholder="Ingresa la segunda referencia" name="Referencia_Calle_2">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Tipo de recidencia</label>
+                    <input type="text" class="form-control" placeholder="Recidencia: Casa, Departamento, etc"
+                        name="Tipo_de_Resincia">
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label pull-left" for="inputDefault">Tipo de recidencia</label>
+                    <select class="custom-select" name="Casa_Propia_Renta">
+                        <option selected="">Seleciona una opcion:</option>
+                        <option value="Casa propia">Casa propia</option>
+                        <option value="Casa rentada">Casa rentada</option>
+                    </select>
+                </div>
+
+                <br>
+                <h3>Datos para el vuelo</h3>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Id del vuelo</label>
+                    <input type="text" class="form-control" placeholder="Ingrese id unico del vuelo" name="Id_de_Vuelo">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Numero de pasaporte</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el numero del pasaporte"
+                        name="Numero_Pasaporte">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Numero de visa</label>
+                    <input type="text" class="form-control" placeholder="Ingrese numero de visa" name="Numero_Visa">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Numero de vuelo</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el numero del vuelo"
+                        name="Numero_Vuelo">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Ciudad de origen</label>
+                    <input type="text" class="form-control" placeholder="Ingrese la ciudad de despegue"
+                        name="Ciudad_de_Origen">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Ciudad o pais de destino</label>
+                    <input type="text" class="form-control" placeholder="Ingrese la ciudad o pais de aterrizaje"
+                        name="Ciudad_de_Destino">
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label pull-left" for="inputDefault">Escala</label>
+                    <select class="custom-select" name="Escala">
+                        <option selected="">Seleciona una opcion:</option>
+                        <option value="Si">Si</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+
+                <div class="form-grup">
+                    <button class="btn btn-warning">
+                        Ingresar datos
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,192 @@
+<div class="jumbotron mt-4 center">
+    <div class="card text-center">
+        <div class="card-header">
+            <h3>Nueva Aerolinea</h3>
+        </div>
+        <div class="card-body">
+            <form action="/aerolineas/nueva-aerolinea" method="POST">
+                <h3>Datos Aerolinea</h3>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Nombre aerolinea</label>
+                    <input type="text" class="form-control" placeholder="Ingresa el nombre de la erolinea"
+                        name="Nombre_Aerolinia" autofocus>
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Numero de avion</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el numero del avion"
+                        name="Numero_de_Avion">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Horas de vuelo</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el numero de horas de vuelo del avion"
+                        name="Horas_de_vuelo">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Capacidad de combustible</label>
+                    <input type="text" class="form-control" placeholder="Ingrese la capacidad del combustible del avion"
+                        name="Capacidad_de_Combustible">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Aerolinea perteneciente</label>
+                    <input type="text" class="form-control"
+                        placeholder="Ingrese el nombre de la aerolinea al que pertenece el avion"
+                        name="Aerolinia_Perteneciente">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Numero de reparaciones</label>
+                    <input type="text" class="form-control"
+                        placeholder="Ingrese el numero de veces que el avion a sido reparado"
+                        name="Numero_de_Reparaciones">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Capacidad maxima de pasajeros</label>
+                    <input type="text" class="form-control" placeholder="Ingrese la capacidad maxima de pasajeros"
+                        name="Capacidad_Maxima_de_Pasajeros">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Peso maximo soportado (Kg)</label>
+                    <input type="text" class="form-control" placeholder="Ingrese le peso maximo soportado por el avion"
+                        name="Capacidad_Maxima_de_Peso_Kg">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Tamaño del avion</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el tamaño avion (metros cuadrados)"
+                        name="Tamano_Avion_MTS_Cuadrados">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Ciudad de origen</label>
+                    <input type="text" class="form-control"
+                        placeholder="Ingrese la ciudad donde fue construido (armado) el avion" name="Ciudad_de_Origen">
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label pull-left" for="inputDefault">Tipo de avion</label>
+                    <select class="custom-select" name="Tipo_de_Avion">
+                        <option selected="">Seleciona una opcion:</option>
+                        <option value="Avion comercial">Avion comercial</option>
+                        <option value="Avion privado">Avion privado</option>
+                        <option value="Avion de carga">Avion de carga</option>
+                        <option value="Avion militar">Avion militar</option>
+                    </select>
+                </div>
+
+                <h3>Datos del sobrecargo</h3>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Sobrecargo contratados</label>
+                    <input type="text" class="form-control" placeholder="Ingresa el numero de sobrecargos"
+                        name="Numero_de_Sobrecargo_Contratados">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Nombre(s) del sobrecargo</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el/los nombre(s) del sobrecargo"
+                        name="Nombre">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Apellido(s)</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el/los apellido(s) del sobrecargo"
+                        name="Apellidos">
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label pull-left" for="inputDefault">Sexo sobrecargo</label>
+                    <select class="custom-select" name="Sexo">
+                        <option selected="">Seleciona una opcion:</option>
+                        <option value="Mujer">Mujer</option>
+                        <option value="Hombre">Hombre</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Tipo de sangre del sobrecargo</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el tipo de sangre del sobrecargo"
+                        name="Tipo_de_Sangre">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Vacuna sobrecargo</label>
+                    <input type="text" class="form-control" placeholder="Ingrese la ultima vacuna del sobrecargo"
+                        name="Vacunas">
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label pull-left" for="inputDefault">Donate de organos sobrecargo</label>
+                    <select class="custom-select" name="Donante_de_Organos">
+                        <option selected="">Seleciona una opcion:</option>
+                        <option value="Si">Si</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Religion sobrecargo</label>
+                    <input type="text" class="form-control" placeholder="Ingrese la religion del sobrecargo"
+                        name="Religion">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Nacionalidad del sobrecargo</label>
+                    <input type="text" class="form-control" placeholder="Ingrese la nacionalidad del sobrecargo"
+                        name="Nacionalidad">
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label pull-left" for="inputDefault">Estado civil actual del
+                        sobrecargo</label>
+                    <select class="custom-select" name="Estado_Civil">
+                        <option selected="">Seleciona una opcion:</option>
+                        <option value="Solter@">Solter@</option>
+                        <option value="Casad@">Casad@</option>
+                        <option value="Divorciad@">Divorciad@</option>
+                        <option value="Viud@">Viud@</option>
+                    </select>
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Escuela de sobrecargo</label>
+                    <input type="text" class="form-control"
+                        placeholder="Ingrese el nombre de la escuela del sobre cargo" name="Tipo_De_Aprendizaje_Vuelo">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Numero de cedula profecional de
+                        sobrecargo</label>
+                    <input type="text" class="form-control"
+                        placeholder="Ingrese el numero de cedula profecional del sobrecargo"
+                        name="Numero_De_Cedula_Profecional">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Tipo de vuelos</label>
+                    <input type="text" class="form-control" placeholder="Ingresa los vuelos: nacional, internacional"
+                        name="Tipos_de_Vuelo">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Numero de permiso</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el numero de permiso de vuelo"
+                        name="Numero_de_Permiso">
+                </div> <br>
+
+                <div class="form-grup">
+                    <button class="btn btn-warning">
+                        Ingresar datos
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

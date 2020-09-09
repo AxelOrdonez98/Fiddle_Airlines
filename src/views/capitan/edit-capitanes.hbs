@@ -1,0 +1,155 @@
+<div class="jumbotron mt-4 center">
+    <div class="card text-center">
+        <div class="card-header">
+            <h3>Editando a: {{capitan.Nombre}}</h3>
+        </div>
+        <div class="card-body">
+            <form action="/capitanes/editar/{{capitan.id}}?_method=PUT" method="POST" method="POST">
+                <input type="hidden" value="_method" value="PUT">
+                <h3>Datos del Capitan</h3>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Nombre(s) capitan</label>
+                    <input type="text" class="form-control" placeholder="Ingresa el/los nombre(s) del capitan"
+                        name="Nombre" value="{{capitan.Nombre}}">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Apellido(s) capitan</label>
+                    <input type="text" class="form-control" placeholder="Ingresa el/los apellido(s) del capitan"
+                        name="Apellidos" value="{{capitan.Apellidos}}">
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label pull-left" for="inputDefault">Sexo capitan</label>
+                    <select class="custom-select" name="Sexo">
+                        <option selected="">Seleciona una opcion:</option>
+                        <option value="Mujer">Mujer</option>
+                        <option value="Hombre">Hombre</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Tipo de sangre capitan</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el tipo de sangre del capitan"
+                        name="Tipo_de_Sangre" value="{{capitan.Tipo_de_Sangre}}">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Vacuna capitan</label>
+                    <input type="text" class="form-control" placeholder="Ingrese la ultima vacuna del capitan"
+                        name="Vacunas" value="{{capitan.Vacunas}}">
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label pull-left" for="inputDefault">Donte de organos capitan</label>
+                    <select class="custom-select" name="Donante_de_Organos">
+                        <option selected="">Seleciona una opcion:</option>
+                        <option value="Si">Si</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Religion del capitan</label>
+                    <input type="text" class="form-control" placeholder="Ingrese la religion del capitan"
+                        name="Religion" value="{{capitan.Religion}}">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Nacionalidad del capitan</label>
+                    <input type="text" class="form-control" placeholder="Ingrese la nacionalidad del capitan"
+                        name="Nacionalidad" value="{{capitan.Nacionalidad}}">
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label pull-left" for="inputDefault">Estado civil actual del capitan</label>
+                    <select class="custom-select" name="Estado_Civil">
+                        <option selected="">Seleciona una opcion:</option>
+                        <option value="Solter@">Solter@</option>
+                        <option value="Casad@">Casad@</option>
+                        <option value="Divorciad@">Divorciad@</option>
+                        <option value="Viud@">Viud@</option>
+                    </select>
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Escuela de avicion del capitan</label>
+                    <input type="text" class="form-control"
+                        placeholder="Ingrese el nombre de la escuela de aviacion del capitan"
+                        name="Tipo_De_Aprendizaje_Vuelo" value="{{capitan.Tipo_De_Aprendizaje_Vuelo}}">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Numero de cedula profecional del
+                        capitan</label>
+                    <input type="text" class="form-control"
+                        placeholder="Ingrese el numero de cedula profecional del capitan"
+                        name="Numero_De_Cedula_Profecional" value="{{capitan.Numero_De_Cedula_Profecional}}">
+                </div>
+
+                <h3></h3>
+                <br>
+                <h3>Direccion fiscal del capitan</h3>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Pais de origen del capitan</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el pais de origen del capitan"
+                        name="Pais" value="{{capitan.Pais}}">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Ciudad de origen del capitan</label>
+                    <input type="text" class="form-control" placeholder="Ingrese la ciudad de origen del capitan"
+                        name="Ciudad" value="{{capitan.Ciudad}}">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Calle del capitan</label>
+                    <input type="text" class="form-control" placeholder="Ingrese la calle del capitan" name="Calle" value="{{capitan.Calle}}">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Numero de calle del capitan</label>
+                    <input type="text" class="form-control" placeholder="ingrese el numero de calle del capitan"
+                        name="Numero_de_Domicilio" value="{{capitan.Numero_de_Domicilio}}">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Codigo postal capitan</label>
+                    <input type="text" class="form-control" placeholder="Ingrese el codigo postal del capitan"
+                        name="Codigo_Postal" value="{{capitan.Codigo_Postal}}">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Referencia de calle 1 capitan</label>
+                    <input type="text" class="form-control"
+                        placeholder="Ingrese la primera calle de referencia del capitan" name="Referencia_Calle_1" value="{{capitan.Referencia_Calle_1}}">
+                </div>
+
+                <div class="form-grup">
+                    <label class="col-form-label pull-left" for="inputDefault">Referencia de calle 2 capitan</label>
+                    <input type="text" class="form-control"
+                        placeholder="Ingrese la segunda calle de referencia del capitan" name="Referencia_Calle_2" value="{{capitan.Referencia_Calle_2}}">
+                </div>
+
+                <div class="form-group">
+                    <label class="col-form-label pull-left" for="inputDefault">Tipo de recidencia del capitan</label>
+                    <select class="custom-select" name="Casa_Propia_Renta">
+                        <option selected="">Seleciona una opcion:</option>
+                        <option value="Casa propia">Casa propia</option>
+                        <option value="Casa rentada">Casa rentada</option>
+                    </select>
+                </div>
+
+                <div class="form-grup">
+                    <button class="btn btn-primary">
+                        Actualizar datos
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
